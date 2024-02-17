@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "sportdiary"
+version = "0.1.0"
+description = ""
+authors = ["pavlentiod <levap.spb@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.2.0"
+bs4 = "^0.0.2"
+datetime = "^5.4"
+haversine = "^2.8.1"
+fuzzywuzzy = "^0.18.0"
+gpx-converter = "^2.1.0"
+timezonefinder = "^6.4.1"
+python-levenshtein = "^0.25.0"
+pyarrow = "^15.0.0"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.27"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
